@@ -102,6 +102,15 @@ const clearPrevious = () => {
         }
     }
 }
+
+const percentage = document.querySelector('.percentage')
+percentage.addEventListener('click', (event) => {
+    inputPercentage(event.target.value)
+    updateScreen(currentNumber)
+})
+const inputPercentage = (percent) => {
+    return currentNumber /= 100;
+}
  
 const decimal = document.querySelector('.decimal')
 decimal.addEventListener('click', (event) => {
